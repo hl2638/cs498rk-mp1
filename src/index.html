@@ -1,5 +1,6 @@
 <!--Reference: -->
 <!--Carousel: https://www.section.io/engineering-education/how-to-make-an-image-carousel-for-your-website/-->
+<!--Modal: https://www.w3schools.com/howto/howto_css_modals.asp-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +19,11 @@
                 </a>
             </div>
             <div class="navbar" id="menu">
-                <div class="menu-item"><a href="#home">Home</a></div>
-                <div class="menu-item"><a href="#whois">About</a></div>
-                <div class="menu-item"><a href="#members">Members</a></div>
-                <div class="menu-item"><a href="#songs">Songs</a></div>
-                <div class="menu-item"><a href="#demo-video">Gunjo - Video</a></div>
+                <div class="menu-item" id="header-home"><a href="#home">Home</a></div>
+                <div class="menu-item" id="header-whois"><a href="#whois">About</a></div>
+                <div class="menu-item" id="header-members"><a href="#members">Members</a></div>
+                <div class="menu-item" id="header-songs"><a href="#songs">Songs</a></div>
+                <div class="menu-item" id="header-demoVideo"><a href="#demoVideo">Gunjo - Video</a></div>
             </div>
 <!--        </div>-->
 
@@ -51,21 +52,46 @@
             <div class="column">
                 <div class="text-content">
                     <h1>Ayase</h1>
-                    <div class="pic-wrapper">
+                    <div class="pic-wrapper" id="ayase-button">
                         <img src="assets/ayase.jpg">
+                    </div>
+                    <div id="details-ayase" class="modal">
+                        <div class="modal-content text-content">
+                            <span id="details-close-ayase" class="modal-close">&times;</span>
+                            <p>1994年4月4日生まれ、山口県出身
+                                2018年12月にVOCALOID楽曲を投稿開始。切なさと哀愁を帯びたメロディ、考察意欲を掻き立てる歌詞で人気を博し、2019年4月に発表した「ラストリゾート」はYouTube800万再生突破。2019年11月リリースの初EP「幽霊東京」は即売、通販共に即完。ボカロ楽曲を自身が歌唱するセルフカバーにも定評があり、「幽霊東京」は1,500万、「夜撫でるメノウ」も1,000万再生を突破。ボカロP、YOASOBIのコンポーザーとしての活動に加えさまざまなアーティストへの楽曲提供も手掛ける2021年最注目のアーティストである。</p>
+
+                        </div>
                     </div>
                     <h1>VOCALOID Producer</h1>
                     <h1>YOASOBI composer</h1>
+                    <div class="social-icons-container">
+                        <a class="instagram icon" href="https://www.instagram.com/ayase_0404/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="twitter icon" href="https://twitter.com/Ayase_0404" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="youtube icon" href="https://www.youtube.com/c/Ayase0404" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="column">
                 <div class="text-content">
                     <h1>Ikura</h1>
-                    <div class="pic-wrapper">
+                    <div class="pic-wrapper" id="ikura-button">
                         <img src="assets/ikura.jpg">
+                    </div>
+                    <div id="details-ikura" class="modal">
+                        <div class="modal-content text-content">
+                            <span id="details-close-ikura" class="modal-close">&times;</span>
+                            <p>2000年9月25日生まれ、東京都出身
+                                シンガーソングライター“幾田りら”として活動し、2019年11月16日(土)に発売した2ndミニアルバム『Jukebox』の収録曲「ロマンスの約束」はYouTube100万回再生を突破。2020年8月よりGoogle Pixel 4aの新CMでカーペンターズ「(THEY LONG TO BE) CLOSE TO YOU」を歌唱するなどその歌声に注目が集まっている。伊勢半のコーポレートブランドKISSME映像ドキュメンタリー作品への書き下ろし楽曲「ヒカリ」を配信リリース。2021年3月に配信リリースした「Answer」は、東京海上日動あんしん生命「あんしん就業不能保障保険」ＣＭソングに起用。7月16日に公開となった細田守監督映画『竜とそばかすの姫』では、主人公・すずの親友役で初の声優を務めるなど、多方面で精力的に活動を続けている。
+                        </div>
                     </div>
                     <h1>Singer, Songwriter</h1>
                     <h1>YOASOBI vocal</h1>
+                    <div class="social-icons-container">
+                        <a class="instagram icon" href="https://www.instagram.com/lilasikuta/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="twitter icon" href="https://twitter.com/ikutalilas" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="youtube icon" href="https://www.youtube.com/channel/UCztEY6czNyJKjRWMwuur9bg" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,8 +99,8 @@
     <section id="songs">
         <div class="text-content">
             <h1>Songs & Novels</h1>
-            <div class="carousel-container">
-                <div class="carousel-item">
+            <div class="carousel-container fade">
+                <div class="carousel-item fade">
                     <div class="column-container">
                         <div class="pic-wrapper column"><img src="assets/yorunikakeru.jpg"></div>
                         <div class="pic-wrapper column"><img src="assets/yoruni_novel_pic.jpg"></div>
@@ -83,7 +109,7 @@
                         <h1>夜に駆ける based on Novel タナトスの誘惑</h1>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item fade">
                     <div class="column-container">
                         <div class="pic-wrapper column"><img src="assets/gunjo.jpg"></div>
                         <div class="pic-wrapper column"><img src="assets/gunjo_novel_pic.png"></div>
@@ -92,7 +118,7 @@
                         <h1>群青 based on Manga ブルーピリオド </h1>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item fade">
                     <div class="column-container">
                         <div class="pic-wrapper column"><img src="assets/mosukoshidake.jpg"></div>
                         <div class="pic-wrapper column"><img src="assets/mousukoshi_novel_pic.png"></div>
@@ -110,7 +136,7 @@
 
 
     </section>
-    <section id="demo-video">
+    <section id="demoVideo">
         <div class="text-content">
             <h1>GUNJO - THE FIRST TAKE VERSION</h1>
 
@@ -123,23 +149,27 @@
             </div>
         </div>
     </section>
+    <footer>
+        <p>All sources and information related to YOASOBI are from the Internet. I do not own their copyrights.</p>
+        <p>Made by Hongyi Liu in September 2021.</p>
+    </footer>
 <!--    DONE: sticky navbar-->
 <!--    DONE: navbar resizing-->
-<!--    TODO: position highlight-->
+<!--    DONE: position highlight-->
 <!--    DONE: smooth scrolling-->
 <!--    DONE: embedded video (html5 video tag)-->
 <!--    DONE: column sections-->
 <!--    DONE: centering-->
-<!--    TODO: carousel-->
+<!--    DONE: carousel-->
 <!--    DONE: fixed-position background image-->
-<!--    TODO: modal window-->
-<!--    TODO: footer-->
+<!--    DONE: modal window-->
+<!--    DONE: footer-->
 
-<!--    TODO: responsive-->
-<!--    TODO: css3 animation-->
-<!--    TODO: modify css by adding scss syntax -->
-<!--    TODO: scalable vector icon (fontawesome)-->
-<!--    TODO: social media icons-->
+<!--    DONE: responsive-->
+<!--    DONE: css3 animation-->
+<!--    DONE: modify css by adding scss syntax -->
+<!--    DONE: scalable vector icon (fontawesome)-->
+<!--    DONE: social media icons-->
 
 </body>
 </html>

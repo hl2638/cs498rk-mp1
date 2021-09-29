@@ -13,3 +13,4 @@ import './css/main.scss';
 import './js/main.js';
 
 
+import '@fontawesome/fontawesome-free/js/all.js';
