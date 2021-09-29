@@ -1,41 +1,137 @@
+<!--Reference: -->
+<!--Carousel: https://www.section.io/engineering-education/how-to-make-an-image-carousel-for-your-website/-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MP1</title>
+    <title>MP1 - YOASOBI Fan Page</title>
 <!--    <link rel="stylesheet" href="./css/main.scss">-->
 </head>
 <body>
+    <header id="header" class="header-large">
+<!--        <div class="header-inner">-->
+            <div id="logo" class="logo-large">
+                <a href="#home">
+                    <img id="logo-img" src="assets/logo.svg">
+                </a>
+            </div>
+            <div class="navbar" id="menu">
+                <div class="menu-item"><a href="#home">Home</a></div>
+                <div class="menu-item"><a href="#whois">About</a></div>
+                <div class="menu-item"><a href="#members">Members</a></div>
+                <div class="menu-item"><a href="#songs">Songs</a></div>
+                <div class="menu-item"><a href="#demo-video">Gunjo - Video</a></div>
+            </div>
+<!--        </div>-->
+
+    </header>
     <section id="home">
-        <header>
-<!--            <a href="#">logo?</a>-->
-            <!--    navbar-->
-            <ul id="menu">
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-            </ul>
-        </header>
+        <div class="home-inner">
+            <div class="banner">
+                <h1>Welcome to My YOASOBI (unofficial) Fan Page</h1>
+            </div>
+        </div>
     </section>
-    <section id="section1">
-        <h1>Section 1</h1>
+    <section id="whois">
+        <div class="text-content">
+            <h1>Who/What is YOASOBI?</h1>
+            <p>Yoasobi (stylized in all caps) is a Japanese music duo composed of Vocaloid (voice synthesizer software) producer Ayase and singer-songwriter Ikura (Lilas Ikuta). The group has released songs based on short stories posted on Monogatary.com, a website operated by Sony Music Entertainment Japan, later also from various novels and book tie-ups.
+
+                The duo debuted with the single "Yoru ni Kakeru" in December 2019. It became successful on the music chart in Japan with charting atop for three consecutive weeks and 2020 year-end on Billboard Japan Hot 100. Their debut extended play The Book was released in January 2021 and reached number two on both Oricon Albums Chart and Billboard Japan Hot Albums.
+            </p>
+            <p id="wiki">
+                <a class=non-style" href="https://en.wikipedia.org/wiki/Yoasobi">- Wikipedia (Click to Learn More)</a>
+            </p>
+        </div>
     </section>
-    <section id="section2">
-        <h1>Section 2</h1>
+    <section id="members">
+        <div class="column-container">
+            <div class="column">
+                <div class="text-content">
+                    <h1>Ayase</h1>
+                    <div class="pic-wrapper">
+                        <img src="assets/ayase.jpg">
+                    </div>
+                    <h1>VOCALOID Producer</h1>
+                    <h1>YOASOBI composer</h1>
+                </div>
+            </div>
+            <div class="column">
+                <div class="text-content">
+                    <h1>Ikura</h1>
+                    <div class="pic-wrapper">
+                        <img src="assets/ikura.jpg">
+                    </div>
+                    <h1>Singer, Songwriter</h1>
+                    <h1>YOASOBI vocal</h1>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="section3">
-        <h1>Section 3</h1>
+    <section id="songs">
+        <div class="text-content">
+            <h1>Songs & Novels</h1>
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <div class="column-container">
+                        <div class="pic-wrapper column"><img src="assets/yorunikakeru.jpg"></div>
+                        <div class="pic-wrapper column"><img src="assets/yoruni_novel_pic.jpg"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h1>夜に駆ける based on Novel タナトスの誘惑</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="column-container">
+                        <div class="pic-wrapper column"><img src="assets/gunjo.jpg"></div>
+                        <div class="pic-wrapper column"><img src="assets/gunjo_novel_pic.png"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h1>群青 based on Manga ブルーピリオド </h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="column-container">
+                        <div class="pic-wrapper column"><img src="assets/mosukoshidake.jpg"></div>
+                        <div class="pic-wrapper column"><img src="assets/mousukoshi_novel_pic.png"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h1>もう少しだけ based on Novel めぐる。 </h1>
+                    </div>
+                </div>
+                <div class="carousel-prev-back-container">
+                    <a id="carousel-prev">&#10094;</a>
+                    <a id="carousel-next">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+
     </section>
-<!--    TODO: sticky navbar-->
-<!--    TODO: navbar resizing-->
+    <section id="demo-video">
+        <div class="text-content">
+            <h1>GUNJO - THE FIRST TAKE VERSION</h1>
+
+            <div class="video-container">
+                <video controls>
+                    <source src="assets/gunjo.mp4" type="video/mp4">
+
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </div>
+        </div>
+    </section>
+<!--    DONE: sticky navbar-->
+<!--    DONE: navbar resizing-->
 <!--    TODO: position highlight-->
-<!--    TODO: smooth scrolling-->
-<!--    TODO: embedded video (html5 video tag)-->
-<!--    TODO: column sections-->
-<!--    TODO: centering-->
+<!--    DONE: smooth scrolling-->
+<!--    DONE: embedded video (html5 video tag)-->
+<!--    DONE: column sections-->
+<!--    DONE: centering-->
 <!--    TODO: carousel-->
+<!--    DONE: fixed-position background image-->
 <!--    TODO: modal window-->
 <!--    TODO: footer-->
 
